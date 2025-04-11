@@ -1,6 +1,9 @@
 
 body {
-  background-color: #121212;
+  background-image: url('997564eea97504a58694f784b5783a93.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   font-family: 'Arial', sans-serif;
   text-align: center;
