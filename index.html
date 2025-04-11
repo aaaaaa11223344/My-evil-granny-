@@ -2,30 +2,24 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>لعبة الجدة جراني</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جدتي الشريرة</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>لعبة الجدة جراني</h1>
-        <form id="loginForm">
-            <input type="text" placeholder="اسم المستخدم" required><br>
-            <input type="password" placeholder="كلمة المرور" required><br>
-            <button type="submit">تسجيل الدخول</button>
-        </form>
-        <p id="welcomeMessage" style="display:none;">مرحبًا بك في لعبة الجدة جراني!</p>
+  <div class="container">
+    <h1>مرحبًا بك في لعبة جدتي الشريرة</h1>
+    <p>استعد لتجربة مرعبة وممتعة!</p>
+    <a href="#" class="btn">ابدأ الآن</a>
+    <div class="login-box">
+      <h2>تسجيل الدخول</h2>
+      <form>
+        <input type="text" placeholder="اسم المستخدم" required>
+        <input type="password" placeholder="كلمة المرور" required>
+        <button type="submit">دخول</button>
+      </form>
     </div>
-
-    <script>
-        const form = document.getElementById('loginForm');
-        const message = document.getElementById('welcomeMessage');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            form.style.display = 'none';
-            message.style.display = 'block';
-        });
-    </script>
+  </div>
 </body>
 </html>
