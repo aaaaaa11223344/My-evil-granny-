@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لعبة الجدة جراني</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لعبة الجدة جراني</h1>
+        <form id="loginForm">
+            <input type="text" placeholder="اسم المستخدم" required><br>
+            <input type="password" placeholder="كلمة المرور" required><br>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <p id="welcomeMessage" style="display:none;">مرحبًا بك في لعبة الجدة جراني!</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        const message = document.getElementById('welcomeMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            form.style.display = 'none';
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
